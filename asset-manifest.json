@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-timeline-events/static/css/main.addb0d38.chunk.css",
+    "main.js": "/react-timeline-events/static/js/main.8de54361.chunk.js",
+    "main.js.map": "/react-timeline-events/static/js/main.8de54361.chunk.js.map",
+    "runtime-main.js": "/react-timeline-events/static/js/runtime-main.d0b3682b.js",
+    "runtime-main.js.map": "/react-timeline-events/static/js/runtime-main.d0b3682b.js.map",
+    "static/js/2.3cb63c72.chunk.js": "/react-timeline-events/static/js/2.3cb63c72.chunk.js",
+    "static/js/2.3cb63c72.chunk.js.map": "/react-timeline-events/static/js/2.3cb63c72.chunk.js.map",
+    "index.html": "/react-timeline-events/index.html",
+    "precache-manifest.25fa559705fad386d9f9bc060f56075a.js": "/react-timeline-events/precache-manifest.25fa559705fad386d9f9bc060f56075a.js",
+    "service-worker.js": "/react-timeline-events/service-worker.js",
+    "static/css/main.addb0d38.chunk.css.map": "/react-timeline-events/static/css/main.addb0d38.chunk.css.map",
+    "static/js/2.3cb63c72.chunk.js.LICENSE": "/react-timeline-events/static/js/2.3cb63c72.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0b3682b.js",
+    "static/js/2.3cb63c72.chunk.js",
+    "static/css/main.addb0d38.chunk.css",
+    "static/js/main.8de54361.chunk.js"
+  ]
+}
