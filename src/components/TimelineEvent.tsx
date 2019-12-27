@@ -8,20 +8,22 @@ interface ITimelineEvent {
     memories: Array<IMemory>
 }
 interface ITimelineEventProps {
-    data: Array<ITimelineEvent>
+    data: Array<ITimelineEvent>,
+    showMemories: boolean,
 };
 
 const TimelineEvent: React.FC<ITimelineEventProps> = (props: ITimelineEventProps) => {
-
+    const { data, showMemories } = props;
     return (
         <div>
-            {props.data.map((item: ITimelineEvent, index: number) => {
+            {data.map((item: ITimelineEvent, index: number) => {
+                const { events, memories } = item;
                 return(
                 <div key={`data-${index}`}>
                     <Events
-                        events={item.events} />
-                    <Memories
-                        memories={item.memories} />
+                        events={events} />
+                    {showMemories && <Memories
+                        memories={memories} />}
                     </div>
                 )
             })}

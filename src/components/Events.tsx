@@ -4,6 +4,7 @@ export interface IEvent {
   title: string,
   description: string
   date: string,
+  image: string
 };
 
 interface IEventsProps {
@@ -15,18 +16,15 @@ const Events: React.FC<IEventsProps> = (props: IEventsProps) => {
   return (
     <ul className="timeline">
     { events.map((item: IEvent, index: number) => {
-      const { title, description, date } = item;
+      const { title, description, date, image } = item;
       return (<li
-      key={`events-${title}`}
-      className="events"
+      key={`event-${title}`}
+      className="event"
       data-date={date}
     >
-      {date ? (
-        <h3>{title}</h3>
-      ) : (
-        <h1>{title}</h1>
-      )}
+      <h1>{title}</h1>
       <p>{description}</p>
+    { image && <img src={image} alt={title} className="image" /> }
     </li>)
     })
     }
