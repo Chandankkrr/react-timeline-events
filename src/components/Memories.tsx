@@ -1,20 +1,20 @@
 import React from 'react';
 
-export interface IMemory{
-  title: string,
-    source: string,
-    type: string
-};
+export interface Memory{
+  title: string;
+    source: string;
+    type: string;
+}
 
-interface IMemoriesProps {
-    memories: Array<IMemory>
-};
+interface MemoriesProps {
+    memories: Array<Memory>;
+}
 
-const Memories: React.FC<IMemoriesProps> = (props: IMemoriesProps) => {
+const Memories: React.FC<MemoriesProps> = (props: MemoriesProps) => {
     const { memories } = props;
     return (
       <div className="img-container">
-      {memories.map((memory: IMemory, index: number) => {
+      {memories.map((memory: Memory) => {
         const { title, source, type } = memory;
             return (
               <a

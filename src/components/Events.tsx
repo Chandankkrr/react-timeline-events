@@ -1,21 +1,21 @@
 import React from 'react';
 
-export interface IEvent {
-  title: string,
-  description: string
-  date: string,
-  image: string
-};
+export interface Event {
+  title: string;
+  description: string;
+  date: string;
+  image: string;
+}
 
-interface IEventsProps {
-  events: Array<IEvent>
-};
+interface EventsProps {
+  events: Array<Event>;
+}
 
-const Events: React.FC<IEventsProps> = (props: IEventsProps) => {
+const Events: React.FC<EventsProps> = (props: EventsProps) => {
   const { events } = props;
   return (
     <ul className="timeline">
-    { events.map((item: IEvent, index: number) => {
+    { events.map((item: Event) => {
       const { title, description, date, image } = item;
       return (<li
       key={`event-${title}`}
@@ -24,9 +24,9 @@ const Events: React.FC<IEventsProps> = (props: IEventsProps) => {
     >
       <h1>{title}</h1>
       <p>{description}</p>
-    { image && <img src={image} alt={title} className="image" /> }
-    </li>)
-    })
+         { image && <img src={image} alt={title} className="image" /> }
+      </li>)
+      })
     }
     </ul>
   );

@@ -1,22 +1,22 @@
 import React from 'react';
-import Events, { IEvent } from './Events';
-import Memories, { IMemory } from './Memories';
+import Events, { Event } from './Events';
+import Memories, { Memory } from './Memories';
 
-interface ITimelineEvent {
-    year: number,
-    events: Array<IEvent>,
-    memories: Array<IMemory>
+interface TimelineEvent {
+    year: number;
+    events: Array<Event>;
+    memories: Array<Memory>;
 }
-interface ITimelineEventProps {
-    data: Array<ITimelineEvent>,
-    showMemories: boolean,
-};
+interface TimelineEventProps {
+    data: Array<TimelineEvent>;
+    showMemories: boolean;
+}
 
-const TimelineEvent: React.FC<ITimelineEventProps> = (props: ITimelineEventProps) => {
+const TimelineEvent: React.FC<TimelineEventProps> = (props: TimelineEventProps) => {
     const { data, showMemories } = props;
     return (
         <div>
-            {data.map((item: ITimelineEvent, index: number) => {
+            {data.map((item: TimelineEvent, index: number) => {
                 const { events, memories } = item;
                 return(
                 <div key={`data-${index}`}>
