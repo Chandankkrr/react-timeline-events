@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import Events, { Event } from './Events';
 import Memories, { Memory } from './Memories';
 
-interface TimelineEvent {
+export interface TimelineEventObject {
     events: Array<Event>;
     memories: Array<Memory>;
 }
+
 interface TimelineEventProps {
-    data: Array<TimelineEvent>;
+    data: Array<TimelineEventObject>;
     showMemories: boolean;
+    timelineStyles: CSSProperties;
 }
 
 const TimelineEvent: React.FC<TimelineEventProps> = (props: TimelineEventProps) => {
-    const { data, showMemories } = props;
+    const { data, showMemories, timelineStyles } = props;
     return (
-        <div>
-            {data.map((item: TimelineEvent, index: number) => {
+        <div style={{...timelineStyles}}>
+            {data.map((item: TimelineEventObject, index: number) => {
                 const { events, memories } = item;
                 return(
                 <div key={`data-${index}`}>

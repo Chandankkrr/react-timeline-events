@@ -3,8 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import data from './data';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <App 
+        headerTitle='Social Media in the last decade'
+        data={data}
+        showMemories={false}
+        renderHeader={true}
+        headerStyles={{backgroundColor: '#f44336', color: 'white'}} 
+        textStyles={{color: 'white', fontSize: '4rem'}}
+        timelineStyles={{background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)'}}
+
+    />, 
+    document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

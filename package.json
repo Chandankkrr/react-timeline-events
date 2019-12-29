@@ -1,5 +1,10 @@
 {
   "name": "timeline-events",
+  "author": {
+    "name": "Chandan Rauniyar",
+    "email": "chandankkrr@gmail.com",
+    "url": "https://chandankkrr.github.io"
+  },
   "version": "0.1.0",
   "private": true,
   "homepage": "https://chandankkrr.github.io/react-timeline-events/",
