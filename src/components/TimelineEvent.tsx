@@ -3,7 +3,6 @@ import Events, { Event } from './Events';
 import Memories, { Memory } from './Memories';
 
 interface TimelineEvent {
-    year: number;
     events: Array<Event>;
     memories: Array<Memory>;
 }
