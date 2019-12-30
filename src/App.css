@@ -16,6 +16,11 @@ body {
     min-height: 100vh;
 }
 
+/* h1 */
+.app-header h1 {
+    margin: 3rem;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -123,7 +128,7 @@ h1 {
     color: #fff;
     font-weight: 400;
     font-size: 2.4em;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 /* p */
