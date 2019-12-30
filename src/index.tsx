@@ -11,7 +11,7 @@ ReactDOM.render(
         data={data}
         showMemories={false}
         renderHeader={true}
-        headerStyles={{backgroundColor: '#f44336', color: 'white'}} 
+        headerStyles={{backgroundColor: '#8d3b9a', color: 'white'}} 
         textStyles={{color: 'white', fontSize: '4rem'}}
         timelineStyles={{background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)'}}
 
