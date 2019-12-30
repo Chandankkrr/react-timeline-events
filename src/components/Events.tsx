@@ -14,21 +14,23 @@ interface EventsProps {
 const Events: React.FC<EventsProps> = (props: EventsProps) => {
   const { events } = props;
   return (
-    <ul className="timeline">
-    { events.map((item: Event) => {
+    <div className="timeline">
+    { events.map((item: Event, index: number) => {
       const { title, description, date, image } = item;
-      return (<li
+      const containerClassName = index % 2 === 0 ? 'container left' : 'container right'
+      return (<div className={containerClassName}
       key={`event-${title}`}
-      className="event"
       data-date={date}
     >
+      <div className="content">
       <h1>{title}</h1>
       <p>{description}</p>
          { image && <img src={image} alt={title} className="image" /> }
-      </li>)
+         </div>
+      </div>)
       })
     }
-    </ul>
+    </div>
   );
 }
 
