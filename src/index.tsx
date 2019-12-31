@@ -6,16 +6,33 @@ import * as serviceWorker from './serviceWorker';
 import data from './data';
 
 ReactDOM.render(
-    <App 
-        headerTitle='Social Media in the last decade'
-        data={data}
-        showMemories={false}
-        renderHeader={true}
-        headerStyles={{backgroundColor: '#8d3b9a', color: 'white'}} 
-        textStyles={{color: 'white', fontSize: '4rem'}}
-        timelineStyles={{background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)'}}
-
-    />, 
+    (
+        <div>
+            <App 
+                headerTitle='Social media in the last decade'
+                data={data}
+                showMemories={false}
+                renderHeader={true}
+                headerStyles={{
+                    background: 'linear-gradient(to right, #E91E63 0%, #673AB7 100%)', 
+                    color: 'white', 
+                    minHeight: '65vh',
+                    borderBottom: '2px dotted #fff'
+                    }} 
+                textStyles={{color: 'white', fontSize: '5rem'}}
+                timelineStyles={{background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)'}}
+            />
+            <div className='footer'>
+                Information taken from &nbsp;
+                <a 
+                    href='https://www.digitalinformationworld.com/2019/10/social-media-history-infographic.html'
+                    target='_blank'
+                    rel="noopener noreferrer">
+                        digitalinformationworld
+                </a>
+            </div>
+        </div>
+    ),
     document.getElementById('root')
 );
 

@@ -16,6 +16,21 @@ body {
     min-height: 100vh;
 }
 
+/* Footer */
+.footer {
+    background: linear-gradient(to right, rgb(233, 30, 99) 0%, rgb(103, 58, 183) 100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a {
+  color: #9E9E9E;
+}
+
 /* h1 */
 .app-header h1 {
     margin: 3rem;
@@ -166,7 +181,7 @@ p {
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 19px;
   }
 
 /* Make all right containers behave like the left ones */
