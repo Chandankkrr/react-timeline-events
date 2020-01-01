@@ -5,7 +5,7 @@
     "email": "chandankkrr@gmail.com",
     "url": "https://chandankkrr.github.io"
   },
-  "version": "0.1.0",
+  "version": "0.3.0",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -24,7 +24,10 @@
     "url": "https://github.com/Chandankkrr/react-timeline-events/issues"
   },
   "main": "lib/Timeline.js",
-  "types" : "dist/*.d.ts",
+  "types": "lib/Timeline.d.ts",
+  "files": [
+    "lib"
+  ],
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -42,7 +45,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-typescript": "tsc",
+    "build-typescript": "tsc && cp src/App.css lib/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -73,5 +76,5 @@
   },
   "peerDependencies": {
     "react": "^16.12.0"
-}
+  }
 }
