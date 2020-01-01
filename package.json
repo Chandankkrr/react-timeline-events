@@ -6,6 +6,9 @@
     "url": "https://chandankkrr.github.io"
   },
   "version": "0.1.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "private": false,
   "homepage": "https://chandankkrr.github.io/react-timeline-events/",
   "keywords": [
