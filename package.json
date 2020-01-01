@@ -20,6 +20,8 @@
   "bugs": {
     "url": "https://github.com/Chandankkrr/react-timeline-events/issues"
   },
+  "main": "lib/Timeline.js",
+  "types" : "dist/*.d.ts",
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
