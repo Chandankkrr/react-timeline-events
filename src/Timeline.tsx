@@ -11,7 +11,7 @@ interface TimelineProps {
   renderHeader?: boolean;
   headerStyles?: CSSProperties;
   textStyles?: CSSProperties;
-  timelineStyles: CSSProperties;
+  timelineStyles?: CSSProperties;
 }
 
 const Timeline: React.FC<TimelineProps> = (props: TimelineProps) => {

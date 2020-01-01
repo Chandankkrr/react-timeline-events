@@ -10,7 +10,7 @@ export interface TimelineEventObject {
 interface TimelineEventProps {
     data: Array<TimelineEventObject>;
     showMemories: boolean;
-    timelineStyles: CSSProperties;
+    timelineStyles?: CSSProperties;
 }
 
 const TimelineEvent: React.FC<TimelineEventProps> = (props: TimelineEventProps) => {
