@@ -14,6 +14,7 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build-typescript
+      - run: npm run copy-css-file
 
   publish-npm:
     needs: build
@@ -25,6 +26,8 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm run build-typescript
+      - run: npm run copy-css-file
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

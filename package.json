@@ -5,7 +5,7 @@
     "email": "chandankkrr@gmail.com",
     "url": "https://chandankkrr.github.io"
   },
-  "version": "0.5.0",
+  "version": "0.6.0",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -45,7 +45,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-typescript": "tsc && cp src/App.css lib/",
+    "build-typescript": "tsc",
+    "copy-css-file": "cp src/App.css lib/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
