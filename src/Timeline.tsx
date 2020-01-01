@@ -4,7 +4,7 @@ import Header from './components/Header';
 import TimelineEvent, { TimelineEventObject } from './components/TimelineEvent';
 
 
-interface AppProps {
+interface TimelineProps {
   headerTitle?: string;
   data: Array<TimelineEventObject>;
   showMemories?: boolean;
@@ -14,7 +14,7 @@ interface AppProps {
   timelineStyles: CSSProperties;
 }
 
-const App: React.FC<AppProps> = (props: AppProps) => {
+const Timeline: React.FC<TimelineProps> = (props: TimelineProps) => {
   const { headerTitle, data, showMemories = false, renderHeader, headerStyles, textStyles, timelineStyles } = props;
   return (
     <div className="App">
@@ -33,4 +33,4 @@ const App: React.FC<AppProps> = (props: AppProps) => {
   );
 }
 
-export default App;
+export default Timeline;

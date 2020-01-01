@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Timeline from './Timeline';
 import * as serviceWorker from './serviceWorker';
 import data from './data';
 
 ReactDOM.render(
     (
         <div>
-            <App 
+            <Timeline 
                 headerTitle='Social media in the last decade'
                 data={data}
                 showMemories={false}
