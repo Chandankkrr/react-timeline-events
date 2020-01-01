@@ -6,13 +6,20 @@
     "url": "https://chandankkrr.github.io"
   },
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://chandankkrr.github.io/react-timeline-events/",
   "keywords": [
     "timeline",
     "react",
     "component"
   ],
+  "repository": {
+    "url": "https://github.com/Chandankkrr/react-timeline-events",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chandankkrr/react-timeline-events/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -30,6 +37,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-typescript": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -57,5 +65,8 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0",
     "gh-pages": "^2.1.1"
-  }
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+}
 }
