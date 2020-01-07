@@ -29,24 +29,12 @@
     "lib"
   ],
   "license": "MIT",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
-    "typescript": "~3.7.2"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build-typescript": "tsc",
-    "copy-css-file": "cp src/App.css lib/",
+    "copy-css-file": "cp src/App.module.css lib/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -69,13 +57,25 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.12.24",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0",
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "typescript": "~3.7.2"
   },
   "peerDependencies": {
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }

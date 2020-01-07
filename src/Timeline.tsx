@@ -1,5 +1,5 @@
 import React, {CSSProperties} from 'react';
-import './App.css';
+import './App.module.css';
 import Header from './components/Header';
 import TimelineEvent, { TimelineEventObject } from './components/TimelineEvent';
 
@@ -17,7 +17,7 @@ interface TimelineProps {
 const Timeline: React.FC<TimelineProps> = (props: TimelineProps) => {
   const { headerTitle, data, showMemories = false, renderHeader, headerStyles, textStyles, timelineStyles } = props;
   return (
-    <div className="App">
+    <div>
      { renderHeader &&  (
         <Header
           title={headerTitle}
