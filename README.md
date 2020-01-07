@@ -1,44 +1,109 @@
+# react-timeline-events
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Easily add a timeline events to your existing react application. 
 
-In the project directory, you can run:
+[Checkout the demo site](https://chandankkrr.github.io/react-timeline-events/)
 
-### `yarn start`
+![react-timeline-events_1](https://raw.githubusercontent.com/Chandankkrr/react-timeline-events/master/screenshots/chandankkrr.github.io_react-timeline-events_%20(1).png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![react-timeline-events_1](https://raw.githubusercontent.com/Chandankkrr/react-timeline-events/master/screenshots/chandankkrr.github.io_react-timeline-events_%20(2).png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Install
 
-### `yarn test`
+`npm install react-timeline-events`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `yarn build`
+``` javascript
+import Timeline from 'react-timeline-events';
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+...
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<Timeline
+    headerTitle='Social media in the last decade'
+    data={data}
+    showMemories={false}
+    renderHeader={true}
+    headerStyles={{
+        // provide your custom styles
+        background: 'linear-gradient(to right, #E91E63 0%, #673AB7 100%)',
+        color: 'white',
+        minHeight: '65vh',
+        borderBottom: '2px dotted #fff'
+    }}
+    textStyles={{
+        color: 'white',
+        fontSize: '5rem'
+    }}
+    timelineStyles={{
+        background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)'
+    }}
+/>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Timeline props
 
-### `yarn eject`
+```typescript
+    headerTitle: string;
+    Provide a header title to be rendered (optional)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    data: Array<TimelineEventObject>;
+    Array of timeline event object thats contains events and memories properties
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    showMemories: boolean;
+    Optional configuration to either show or hide memories (images) for a events (default: false)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    renderHeader: boolean;
+    Optional configuration to either show or hide header component (default: false)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    headerStyles?: CSSProperties;
+    Optional header styles configuration that allows to add additional styles to the header component (default: false)
 
-## Learn More
+    textStyles?: CSSProperties;
+    Optional text styles configuration that allows to add additional styles to the header text (default: false)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    timelineStyles?: CSSProperties;
+    Optional timeline styles configuration that allows to add additional styles to the timeline (default: false)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+
+## TimelineEventObject props
+
+```typescript
+    events: Array<Event>;
+    Array of events object
+
+    memories: Array<Memory>;
+    Array of memory object
+```
+
+## Event props
+
+```typescript
+    title: string;
+    Event title
+
+    description: string;
+    Event description
+
+    date: string;
+    Event date
+
+    image: string;
+    Image source
+```
+
+## Memory props
+
+```typescript
+    title: string;
+    Memory title
+
+    source: string;
+    Image source
+
+    type: string;
+    Image type, one of big, horizontal or vertical
+```

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export interface Memory{
-  title: string;
+    title: string;
     source: string;
     type: string;
 }
