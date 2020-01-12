@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Easily add a timeline events to your existing react application. 
+Easily add a timeline component to your existing react application. 
 
 [Checkout the demo site](https://chandankkrr.github.io/react-timeline-events/)
 
