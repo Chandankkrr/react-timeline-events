@@ -47,15 +47,15 @@ import Timeline from 'react-timeline-events';
 
 ```typescript
     headerTitle: string;
-    Provide a header title to be rendered (optional)
+    Provide a header text to be rendered (optional)
 
     data: Array<TimelineEventObject>;
-    Array of timeline event object thats contains events and memories properties
+    Array of timeline event object thats contains events and memories
 
-    showMemories: boolean;
-    Optional configuration to either show or hide memories (images) for a events (default: false)
+    showMemories?: boolean;
+    Optional configuration to either show or hide memories (images) for a event (default: false)
 
-    renderHeader: boolean;
+    renderHeader?: boolean;
     Optional configuration to either show or hide header component (default: false)
 
     headerStyles?: CSSProperties;
@@ -77,6 +77,20 @@ import Timeline from 'react-timeline-events';
 
     memories: Array<Memory>;
     Array of memory object
+```
+
+## Header props
+
+```typescript
+    title?: string;
+    Header title
+    
+    headerStyles?: CSSProperties;
+    Optional header styles configuration that allows to add additional styles to the header component (default: false)
+    
+    textStyles?: CSSProperties;
+    Optional text styles configuration that allows to add additional styles to the header text (default: false)
+}
 ```
 
 ## Event props
