@@ -52,6 +52,34 @@ import Timeline from 'react-timeline-events';
     data: Array<TimelineEventObject>;
     Array of timeline event object thats contains events and memories
 
+    Example data array:
+
+    [
+        {
+           events: [
+             {
+               title: "2010",
+               description: "",
+               date: "",
+               image: ""
+             },
+             {
+               title: "Instagram",
+               description: "Instagram launches on iOS making it the first mobile-only social network",
+               date: "",
+               image: "https://en.instagram-brand.com/wp-content/uploads/2016/11/Glyph-Icon-hero.png"
+             },
+           ],
+           memories: [
+             {
+               source: "https://en.instagram-brand.com/wp-content/uploads/2016/11/Glyph-Icon-hero.png",
+               type: "big",
+               title: 'test'
+             },
+           ]
+        },
+    ]
+
     showMemories?: boolean;
     Optional configuration to either show or hide memories (images) for a event (default: false)
 

@@ -9,7 +9,7 @@ export interface TimelineEventObject {
 
 interface TimelineEventProps {
     data: Array<TimelineEventObject>;
-    showMemories: boolean;
+    showMemories?: boolean;
     timelineStyles?: CSSProperties;
 }
 
