@@ -16,7 +16,10 @@ interface TimelineEventProps {
 const TimelineEvent: React.FC<TimelineEventProps> = (props: TimelineEventProps) => {
     const { data, showMemories, timelineStyles } = props;
     return (
-        <div style={{...timelineStyles}}>
+        <div style={{
+            background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)',
+            ...timelineStyles
+            }}>
             {data.map((item: TimelineEventObject, index: number) => {
                 const { events, memories } = item;
                 return(

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../css/App.module.css';
 
 export interface Memory{
     title: string;
@@ -13,7 +14,7 @@ interface MemoriesProps {
 const Memories: React.FC<MemoriesProps> = (props: MemoriesProps) => {
     const { memories } = props;
     return (
-      <div className="img-container">
+      <div className={styles.imageContainer}>
       {memories.map((memory: Memory) => {
         const { title, source, type } = memory;
             return (
@@ -21,7 +22,7 @@ const Memories: React.FC<MemoriesProps> = (props: MemoriesProps) => {
                 href={source}
                 data-lightbox="homePortfolio"
                 key={`memory-${title}`}
-                className={type}
+                className={styles[type]}
               >
                 <img src={source} alt={title}/>
               </a>
