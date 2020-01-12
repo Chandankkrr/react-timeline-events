@@ -5,7 +5,7 @@
     "email": "chandankkrr@gmail.com",
     "url": "https://chandankkrr.github.io"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -33,8 +33,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-typescript": "tsc",
-    "copy-css-file": "cp src/App.module.css lib/",
+    "build-typescript": "rm -rf ./lib && tsc",
+    "copy-css-file": "mkdir ./lib/css && cp src/css/App.module.css lib/css/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -66,12 +66,13 @@
     "@types/react-dom": "^16.9.0",
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
+    "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0",
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.3.0",
     "typescript": "~3.7.2"
   },
   "peerDependencies": {

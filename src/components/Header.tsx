@@ -1,4 +1,5 @@
 import React, { CSSProperties } from 'react';
+import * as styles from '../css/App.module.css';
 
 interface HeaderProps {
     title?: string;
@@ -11,7 +12,7 @@ const Memory: React.FC<HeaderProps> = (props: HeaderProps) => {
 
     return (
         <header 
-            className="app-header" 
+            className={styles.appHeader} 
             style={{...headerStyles}}>
         <h1 style={{...textStyles}}>{title}</h1>
       </header>

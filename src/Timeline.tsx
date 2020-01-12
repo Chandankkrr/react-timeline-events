@@ -1,8 +1,7 @@
 import React, {CSSProperties} from 'react';
-import './App.module.css';
+import './css/App.module.css';
 import Header from './components/Header';
 import TimelineEvent, { TimelineEventObject } from './components/TimelineEvent';
-
 
 interface TimelineProps {
   headerTitle?: string;

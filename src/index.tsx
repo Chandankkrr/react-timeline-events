@@ -4,6 +4,7 @@ import './index.css';
 import Timeline from './Timeline';
 import * as serviceWorker from './serviceWorker';
 import data from './data';
+import styles from './css/App.module.css';
 
 ReactDOM.render(
     (
@@ -22,7 +23,7 @@ ReactDOM.render(
                 textStyles={{color: 'white', fontSize: '5rem'}}
                 timelineStyles={{background: 'linear-gradient(to right, #673AB7 0%, #E91E63 100%)'}}
             />
-            <div className='footer'>
+            <div className={styles.footer}>
                 Information taken from &nbsp;
                 <a 
                     href='https://www.digitalinformationworld.com/2019/10/social-media-history-infographic.html'
